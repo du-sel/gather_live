@@ -10,7 +10,8 @@
 
 ### Language & Tools
 - JAVA
-- HTML / CSS
+- HTML
+- CSS
 - JavaScript
 - Servlets & JSP
 
@@ -24,6 +25,8 @@
 
 - "모집글로 찾기" 기능과 "게더톡" 기능은 아직 미구현 상태로 추후 추가될 예정입니다
 
+---
 
-
+### 참고 사항
+- 프레임워크 없이 순수 자바로 구현되었습니다
 
