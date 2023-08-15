@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+
+
+<style>
+
+	#conatiner { display: flex; }
+
+	#box { 
+		flex-basis: 10px; 
+		flex-grow: 1;
+		height: 100px; 
+		background: lightcoral; 
+		border-radius: 40px; }
+
+</style>
+
+
+
+</head>
+<body>
+
+	<div id="div"></div>
+
+
+
+	<div id="container">
+
+		<div id="box"></div>
+		
+	</div>
+
+
+	<script>
+
+	let box = document.getElementById('box');
+	let div;
+	let newDiv;
+	let container;
+
+	newDiv = document.createElement('div');
+	newDiv.style.background = "lightgray";
+	newDiv.style.height = '100px';
+	newDiv.style.position = 'relative';
+	newDiv.style.marginTop = '-100px';
+	newDiv.style.zIndex = "-10";
+	
+	
+	const getSize = function() {
+		let w = getComputedStyle(box).getPropertyValue('width');
+		
+		div = document.getElementById('div');
+		div.innerHTML = w;
+
+		newDiv.style.width = w;
+	}
+	
+	window.addEventListener('resize',getSize);
+
+
+	container = document.getElementById('container');
+	container.appendChild(newDiv);
+
+
+
+
+	const doRotate = function() {
+		let next = box.nextElementSibling;
+		next.style.transition = "transform 0.3s";
+		next.style.transform = 'rotate(10deg)';
+	}
+	const reRotate = function() {
+		let next = box.nextElementSibling;
+		next.style.transition = "transform 0.3s";
+		next.style.transform = 'rotate(0deg)';
+	}
+
+	box.addEventListener('mouseover',doRotate);
+	box.addEventListener('mouseout',reRotate);
+
+
+
+</script>
+
+
+</body>
+</html>

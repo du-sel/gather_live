@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+/* @font-face {
+    font-family: 'NanumSquareRound';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+
+
+
+
+
+
+* { margin: 0; padding: 0; border: 0; box-sizing: border-box; }
+
+ul, ol { list-style: none; }
+
+
+
+
+html {
+	font-size: 100%;
+	font-family: NanumSquareRound, sans-serif;
+	font-weight: normal;
+	color: #463072ff;
+}
+
+body {
+	/* background-color: #f9f9f7; */
+	background-color: #fff;
+}
+
+
+
+h1 {
+	font-size: 2.25rem;
+	font-family: "NanumSquareRoundEB";
+}
+h2 {
+	font-size: 1.75rem;
+	font-family: "NanumSquareRoundEB";
+}
+h3 {
+	font-size: 1.5rem;
+	font-family: "NanumSquareRoundEB";
+}
+h4 {
+	font-size: 1.25rem;
+	font-family: "NanumSquareRoundB";
+}
+h5 {
+	font-size: 1.125rem;
+	font-family: "NanumSquareRoundB";
+}
+h6 {
+	font-size: 0.875rem;
+	font-family: "NanumSquareRoundEB";
+}
+.bold { font-family: "NanumSquareRoundEB"; }
+
+
+
+
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+a:hover {
+	cursor: pointer;
+	color: #ffc424ff;
+}
+
+a>h4:hover {
+	cursor: pointer;
+	color: #ffc424ff;
+}
